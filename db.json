@@ -1,0 +1,27 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "My goals for today<3 Aug 2020>",
+      "body": "I want to complete Angular by evening",
+      "important": true
+    },
+    {
+      "id": 2,
+      "title": "Plan for October",
+      "body": "Complete Java",
+      "important": true
+    },
+    {
+      "id": 3,
+      "title": "MY DAY TODAY 3 Aug",
+      "body": "It was a great day, yipee"
+    },
+    {
+      "id": 4,
+      "title": "Ask Annie for ALM access ",
+      "body": "Ask her to let you know the username n password",
+      "important": false
+    }
+  ]
+}

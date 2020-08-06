@@ -1,0 +1,21 @@
+<button class="btn btn-raised btn-danger collection btn-lg" routerLink="/view">Your collection</button>
+
+<mat-card class="card">
+    <mat-card-title>
+        <mat-form-field class="example-full-width">
+            <mat-label>Title</mat-label>
+            <input [(ngModel)]="note.title" matInput placeholder="My day today...">
+        </mat-form-field>
+    </mat-card-title>
+
+    <mat-card-content>
+        <mat-form-field class="example-full-width">
+            <mat-label>Details</mat-label>
+            <textarea [(ngModel)]="note.body" matInput placeholder="I want to complete..."></textarea>
+        </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-content>
+        <button class="btn btn-primary done" (click)="onSubmit()">Done</button>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,7 @@
+<span *ngIf="bookmark; then valueT else valueF"></span>
+<ng-template #valueT>
+    <i class="fa fa-bookmark" (click)="changeBookmark()"></i>
+</ng-template>
+<ng-template #valueF>
+    <i class="fa fa-bookmark-o" (click)="changeBookmark()"></i>
+</ng-template>

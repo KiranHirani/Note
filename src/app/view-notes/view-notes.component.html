@@ -1,0 +1,47 @@
+<button class="btn btn-primary btn-lg create" routerLink="">Create a Note
+    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+</button>
+<br />
+<!-- To display the important notes -->
+<h3>
+    Important
+</h3>
+<span *ngFor="let a of array">
+    <span *ngIf="(a.important)">
+        <mat-card>
+            <mat-card-title>
+                {{a.title}}
+            </mat-card-title>
+            <mat-card-subtitle>
+                {{a.body}}
+            </mat-card-subtitle>
+        </mat-card>
+    </span>
+</span>
+<br />
+
+<!-- To display all notes  -->
+<h3>
+    All Notes
+</h3>
+<br />
+<mat-card *ngFor="let a of array">
+
+    <mat-card-title>
+        {{a.title}}
+    </mat-card-title>
+
+    <mat-card-content>
+        {{a.body}}
+    </mat-card-content>
+
+    <mat-card-content>
+        <button class="btn btn-raised">
+            <bookmark [isBookmarked]="bookmark" (change)="Bookmark($event,a)"></bookmark>
+        </button>
+        &nbsp;
+        <button class="btn btn-warning btn-sm" (click)="getNote(a)">Edit</button>
+        &nbsp;
+        <button class="btn btn-primary btn-sm" (click)="delete(a)">Delete</button>
+    </mat-card-content>
+</mat-card>

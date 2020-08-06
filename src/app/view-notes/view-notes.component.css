@@ -1,0 +1,16 @@
+mat-card
+{
+    margin:15px;
+    width:200px;
+    display:inline-block;
+}
+h3
+{
+    font-family: 'Playfair Display SC', serif;
+    font-weight:bold
+}
+.create
+{
+    font-family: 'Playfair Display SC', serif;
+    margin-bottom:10px;
+}

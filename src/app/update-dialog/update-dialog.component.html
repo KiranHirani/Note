@@ -1,0 +1,18 @@
+<mat-form-field>
+    <mat-label>Title</mat-label>
+    <input matInput [(ngModel)]="note.title">
+</mat-form-field>
+<br/>
+
+<mat-form-field>
+    <mat-label>Details</mat-label>
+    <textarea matInput [(ngModel)]="note.body"></textarea>
+</mat-form-field>
+<br/>
+
+<button class="btn btn-warning btn-sm" (click)="get()">Get Previous data</button>
+&nbsp;
+<button class="btn btn-primary btn-sm" (click)="update()" 
+routerLink="/view" mat-dialog-close>Update</button>
+&nbsp;
+<button class="btn btn-sm" mat-dialog-close>Close</button>
